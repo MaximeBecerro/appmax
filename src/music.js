@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 
 class Music extends Component {
     constructor(props) {
@@ -14,9 +15,10 @@ class Music extends Component {
     render() {
         return (
             <div className="music">
-                <audio autoplay loop>
-                    <source src="song/11 De Visée - Suite in C minor (La Plainte, ou Tombeau de Mesdemoiselles de Visée, filles de l'auteur).mp3" />
-                </audio>
+                <ReactAudioPlayer
+                src="devisee.mp3"
+                autoPlay
+                />
             </div>
         );
     }
