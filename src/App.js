@@ -7,6 +7,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+
+        </header>
+        <main className="App-main">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             <code>Hello world</code>
@@ -19,7 +22,10 @@ class App extends Component {
           >
             Learn React
           </a>
-        </header>
+        </main>
+        <footer className="App-footer">
+
+        </footer>
       </div>
     );
   }
