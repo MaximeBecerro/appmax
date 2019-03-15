@@ -1,6 +1,7 @@
 @import "./var.scss";
 
 .App {
+  background-color: $backgroundColor;
   text-align: center;
 
   .App-header {
@@ -8,7 +9,6 @@
   }
   
   .App-main {
-    background-color: $mainColor;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,6 +16,16 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: $textColor;
+
+    .App-background-layer {
+      animation: App-background-slide 25s ease 0s infinite forwards;
+      position: fixed;
+      width: 100%;
+
+      .App-background {
+        width: 120%;
+      }
+    }
 
     .App-logo {
       animation: App-logo-spin infinite 20s linear;
@@ -40,5 +50,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes App-background-slide {
+  0% {
+    transform: translate(-10%, -10%) scale(1.1);
+  }
+  25% {
+    transform: translate(10%, 10%) scale(1.2);
+  }
+  50% {
+    transform: translate(-10%, 10%) scale(1.0);
+  }
+  75% {
+    transform: translate(10%, -10%) scale(1.25);
+  }
+  100% {
+    transform: translate(-10%, -10%) scale(1.1);
   }
 }

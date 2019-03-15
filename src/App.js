@@ -10,6 +10,9 @@ class App extends Component {
 
         </header>
         <main className="App-main">
+          <div className="App-background-layer">
+            <img className="App-background" src="/img/kanji.png" alt="kanji background"/>
+          </div>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             <code>Hello world</code>
