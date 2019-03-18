@@ -16,7 +16,7 @@ class App extends Component {
           </div>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            <code>Hello world!</code>
+            <code>Hello world! By Max</code>
           </p>
           <Music />
         </main>
