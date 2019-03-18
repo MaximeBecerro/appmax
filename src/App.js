@@ -18,14 +18,6 @@ class App extends Component {
           <p>
             <code>Hello world!</code>
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
           <Music />
         </main>
         <footer className="App-footer">
